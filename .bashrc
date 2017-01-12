@@ -26,5 +26,5 @@ alias emotes='vim ~/Documents/Personal/emotes'
 alias todo='vim ~/todo.todo'
 alias clipboard='xclip -selection c -i'
 alias python=/usr/bin/python3
-alias newsbeuter='newsbeuter -q -C ~/.conf/newsbeuter.conf -u ${NEWSBEUTER}'
+alias newsbeuter='newsbeuter -q -C ~/.conf/newsbeuter.conf -u ~/.newsbeuter/urls'
 
