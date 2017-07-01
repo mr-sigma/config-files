@@ -24,7 +24,9 @@ alias df='df -H'
 alias du='du -ch'
 alias emotes='vim ~/Documents/Personal/emotes'
 alias todo='vim ~/todo.todo'
-alias clipboard='xclip -selection c -i'
-alias python=/usr/bin/python3
+alias python='/usr/bin/python3'
+alias py='python'
+alias xbox='sudo xboxdrv --detach-kernel-driver --mimic-xpad --silent'
 alias newsbeuter='newsbeuter -q -C ~/.conf/newsbeuter.conf -u ~/.newsbeuter/urls'
 
+export PATH=$HOME/bin:$PATH
