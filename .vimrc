@@ -1,5 +1,21 @@
-" Pathogen - https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
+" vim-plug
+call plug#begin()
+
+" General
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'ctrlpvim/ctrlp.vim'
+
+" Rails
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-rake'
+
+call plug#end()
 
 " Allow for scrolling through wrapped lines
 nmap k gk
