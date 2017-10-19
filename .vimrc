@@ -28,6 +28,7 @@ runtime macros/matchit.vim
 syntax on
 filetype plugin indent on
 set shiftwidth=2
+set colorcolumn=80
 
 " NO TABS
 set expandtab
