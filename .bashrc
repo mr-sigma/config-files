@@ -31,3 +31,4 @@ alias xbox='sudo xboxdrv --detach-kernel-driver --mimic-xpad --silent'
 alias newsbeuter='newsbeuter -q -C ~/.conf/newsbeuter.conf -u ~/.newsbeuter/urls'
 
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:$PATH
