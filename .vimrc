@@ -3,6 +3,7 @@ call plug#begin()
 
 " Colors
 Plug 'altercation/vim-colors-solarized'
+Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 
 " General
 Plug 'tpope/vim-sensible'
@@ -39,8 +40,4 @@ set expandtab
 
 " Colors
 syntax enable
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans = 1
-let g:solarized_termcolors=16
-colorscheme solarized
+colorscheme jellybeans
