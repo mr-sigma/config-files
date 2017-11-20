@@ -1,6 +1,9 @@
 " vim-plug
 call plug#begin()
 
+" Colors
+Plug 'altercation/vim-colors-solarized'
+
 " General
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
@@ -33,3 +36,11 @@ set number
 
 " NO TABS
 set expandtab
+
+" Colors
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_termtrans = 1
+let g:solarized_termcolors=16
+colorscheme solarized
