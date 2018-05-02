@@ -19,6 +19,13 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-rake'
 
+" Javascript
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
+" Coding
+Plug 'metakirby5/codi.vim'
+
 call plug#end()
 
 " Allow for scrolling through wrapped lines

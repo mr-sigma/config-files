@@ -30,6 +30,8 @@ alias py='python'
 alias xbox='sudo xboxdrv --detach-kernel-driver --mimic-xpad --silent'
 alias newsbeuter='newsbeuter -q -C ~/.conf/newsbeuter.conf -u ~/.newsbeuter/urls'
 alias adog='git log --all --decorate --oneline --graph'
+alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
+alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/bin:$PATH
