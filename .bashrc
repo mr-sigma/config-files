@@ -18,7 +18,7 @@ fi
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # User specific aliases and functions
-alias ls='ls -G'
+alias ls='ls -G --color=auto'
 alias la='ls -lahG'
 alias h='history'
 alias df='df -H'
