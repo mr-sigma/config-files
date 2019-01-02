@@ -26,6 +26,9 @@ Plug 'mxw/vim-jsx'
 " Coding
 Plug 'metakirby5/codi.vim'
 
+" Lint
+Plug 'w0rp/ale'
+
 call plug#end()
 
 " Allow for scrolling through wrapped lines

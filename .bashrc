@@ -5,6 +5,8 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
 # show current git branch in prompt if applicable
 if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
   source /usr/share/git-core/contrib/completion/git-prompt.sh
@@ -35,3 +37,7 @@ alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=sta
 
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
