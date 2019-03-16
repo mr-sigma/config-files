@@ -12,6 +12,10 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'ctrlpvim/ctrlp.vim'
 
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+
 " Rails
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
@@ -22,9 +26,6 @@ Plug 'tpope/vim-rake'
 " Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-
-" Coding
-Plug 'metakirby5/codi.vim'
 
 " Lint
 Plug 'w0rp/ale'
