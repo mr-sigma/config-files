@@ -24,8 +24,11 @@ Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-rake'
 
 " Javascript
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+" Plug 'pangloss/vim-javascript'
+" Plug 'mxw/vim-jsx'
+
+" Syntax
+Plug 'sheerun/vim-polyglot'
 
 " Lint
 Plug 'w0rp/ale'
@@ -45,6 +48,7 @@ filetype plugin indent on
 set shiftwidth=2
 set colorcolumn=80
 set number
+set hlsearch
 
 " NO TABS
 set expandtab
