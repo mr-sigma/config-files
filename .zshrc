@@ -40,9 +40,45 @@ alias adog='git log --all --decorate --oneline --graph'
 alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 alias rubocop_changed='git status --porcelain | xargs rubocop'
+alias tmux="TERM=screen-256color-bce tmux"
+alias sunstat="sun -a 41.310726, -72.929916"
 
 export PATH=$HOME/bin:$PATH
+export GIT_EDITOR=vim
 
+REPOS=(
+)
+function repo_pr_status {
+  echo $1
+  if [[ $2 == "--all" ]]; then
+    #statements
+    gh pr status --repo $1
+  else
+    gh pr status --repo $1 | grep --after-context 20 --color=never "Requesting a code review from you"
+  fi
+}
+function all-pr-status {
+  for repo in $REPOS
+  do
+    repo_pr_status $repo
+  done
+}
+function list-prs {
+  for repo in $REPOS
+  do
+    gh pr list --repo $repo
+  done
+}
+function mergable-prs {
+  for repo in $REPOS
+  do
+    GH_PAGER=cat gh pr list --label "Ready for Merge" --repo $repo
+  done
+}
+
+function kill-port-process {
+  sudo kill $(sudo lsof -t -i:$1)
+}
 
 autoload -Uz compinit
 compinit
