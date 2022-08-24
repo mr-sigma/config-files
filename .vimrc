@@ -1,15 +1,20 @@
+set nocompatible
+set re=0
+
 " vim-plug
 call plug#begin()
 
+
 " Colors
 Plug 'altercation/vim-colors-solarized'
-Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
+Plug 'nanotech/jellybeans.vim'
 
 " General
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-jdaddy'
 Plug 'ctrlpvim/ctrlp.vim'
 
 " Git
@@ -22,10 +27,6 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-rake'
-
-" Javascript
-" Plug 'pangloss/vim-javascript'
-" Plug 'mxw/vim-jsx'
 
 " Syntax
 Plug 'sheerun/vim-polyglot'
@@ -41,6 +42,11 @@ nmap j gj
 
 " Enable matchit
 runtime macros/matchit.vim
+
+" ESLINT
+let g:ale_fixers = {}
+let g:ale_fixers.javascript = ['eslint']
+let g:ale_fix_on_save = 1
 
 " Idiosyncrasies
 syntax on

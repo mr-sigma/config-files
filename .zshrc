@@ -1,8 +1,12 @@
+autoload -Uz compinit && compinit
+
 export PS1="%#%n@%m:%1~  "
 
 # git completion stuff
 # download this first https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+# then download https://github.com/git/git/blob/master/contrib/completion/git-completion.zsh
 # follow installation instructions
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 
 # Git branch name stuff
@@ -28,6 +32,7 @@ RPROMPT=$'$(vcs_info_wrapper)'
 # User specific aliases and functions
 alias ls='ls -G'
 alias la='ls -lahG'
+alias exaa='exa -lah'
 alias h='history'
 alias df='df -H'
 alias du='du -ch'
